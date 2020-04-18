@@ -7,7 +7,7 @@ layout: page
 permalink: https://b.0218.jp/about/
 published: true
 post_date: 2014-01-04 04:42:41
-slug: ""
+slug: about
 ---
 ## ブログについて
 ### 概要
