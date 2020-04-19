@@ -5,7 +5,9 @@ published: true
 post_date: 2014-01-04 04:42:41
 modified_date: 2019-01-23 11:36:12
 slug: about
-categories: ""
+categories: |
+  -
+  - ""
 tags: ""
 ---
 ## ブログについて
