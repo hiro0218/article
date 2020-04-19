@@ -7,4 +7,5 @@ modified_date: 2018-03-30 09:07:38
 slug: archive
 categories: ""
 tags: ""
+is_markdown: true
 ---

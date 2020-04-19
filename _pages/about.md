@@ -7,6 +7,7 @@ modified_date: 2019-01-23 11:36:12
 slug: about
 categories: ""
 tags: ""
+is_markdown: true
 ---
 ## ブログについて
 ### 概要
