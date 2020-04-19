@@ -2,11 +2,11 @@
 ID: 1024
 post_title: サイトについて
 author: hiro
-post_excerpt: ""
 layout: page
 permalink: https://b.0218.jp/about/
 published: true
 post_date: 2014-01-04 04:42:41
+modified_date: ""
 slug: about
 ---
 ## ブログについて
