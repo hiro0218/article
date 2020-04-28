@@ -1,0 +1,12 @@
+{
+  "html": false,
+  "no-inline-html": false,
+  "first-line-h1": false,
+  "line-length": false,
+  "fenced-code-language": false,
+  "no-trailing-punctuation": false,
+  "no-duplicate-heading": false,
+  "no-multiple-blanks": {
+    "maximum": 2
+  }
+}

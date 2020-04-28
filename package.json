@@ -1,0 +1,24 @@
+{
+  "name": "article",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "markdownlint _posts",
+    "format": "prettier --write _posts/*.md",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hiro0218/article.git"
+  },
+  "author": "hiro0218",
+  "bugs": {
+    "url": "https://github.com/hiro0218/article/issues"
+  },
+  "homepage": "https://github.com/hiro0218/article",
+  "devDependencies": {
+    "markdownlint-cli": "^0.22.0",
+    "prettier": "2.0.5"
+  }
+}
