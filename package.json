@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "markdownlint _posts",
+    "format": "prettier --write _posts/*.md",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,7 +17,8 @@
     "url": "https://github.com/hiro0218/article/issues"
   },
   "homepage": "https://github.com/hiro0218/article",
-  "dependencies": {
-    "markdownlint-cli": "^0.22.0"
+  "devDependencies": {
+    "markdownlint-cli": "^0.22.0",
+    "prettier": "2.0.5"
   }
 }
