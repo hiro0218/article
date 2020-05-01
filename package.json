@@ -18,7 +18,19 @@
   },
   "homepage": "https://github.com/hiro0218/article",
   "devDependencies": {
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.2",
     "markdownlint-cli": "^0.22.0",
     "prettier": "2.0.5"
+  },
+  "lint-staged": {
+    "**/*.md": [
+      "prettier --write"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
