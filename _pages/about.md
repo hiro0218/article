@@ -1,7 +1,6 @@
 ---
 ID: 1024
 title: サイトについて
-published: true
 date: 2014-01-04 04:42:41
 updated: 2019-01-23 11:36:12
 slug: about
