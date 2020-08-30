@@ -19,9 +19,9 @@
   "homepage": "https://github.com/hiro0218/article",
   "devDependencies": {
     "husky": "^4.2.5",
-    "lint-staged": "^10.2.11",
+    "lint-staged": "^10.2.13",
     "markdownlint-cli": "^0.23.2",
-    "prettier": "2.0.5"
+    "prettier": "2.1.1"
   },
   "lint-staged": {
     "**/*.md": [
