@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "markdownlint _posts",
+    "lint:text": "textlint _posts",
     "format": "prettier --write _posts/*.md",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,7 +22,11 @@
     "husky": "^4.2.5",
     "lint-staged": "^10.2.13",
     "markdownlint-cli": "^0.23.2",
-    "prettier": "2.1.1"
+    "prettier": "2.1.1",
+    "textlint": "^11.7.6",
+    "textlint-rule-preset-ja-technical-writing": "^4.0.1",
+    "textlint-rule-preset-jtf-style": "^2.3.4",
+    "textlint-rule-web-plus-db": "^1.1.5"
   },
   "lint-staged": {
     "**/*.md": [
