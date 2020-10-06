@@ -19,10 +19,10 @@
   },
   "homepage": "https://github.com/hiro0218/article",
   "devDependencies": {
-    "husky": "^4.2.5",
-    "lint-staged": "^10.2.13",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.4.0",
     "markdownlint-cli": "^0.23.2",
-    "prettier": "2.1.1",
+    "prettier": "2.1.2",
     "textlint": "^11.7.6",
     "textlint-rule-preset-ja-technical-writing": "^4.0.1",
     "textlint-rule-preset-jtf-style": "^2.3.4",
