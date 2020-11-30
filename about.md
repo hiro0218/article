@@ -2,7 +2,7 @@
 ID: 1024
 title: about
 date: 2014-01-04 04:42:41
-updated: 2019-01-23 11:36:12
+updated: 2020-11-30 10:06:12
 slug: about
 ---
 
@@ -41,11 +41,14 @@ Google Analytics / Google AdSense がアクセス情報を Cookie を通じて�
 
 hiro という名前で活動しています。
 
-- GitHub: https://github.com/hiro0218
+- GitHub: https://github.com/hiro0218  
+- CodePen: https://codepen.io/hiro0218
+- Zenn: https://zenn.dev/hiro
 
-### 経歴
+## 経歴
 
-経歴の詳細は、Wantedly に記載しておりますのでお問い合わせください。
+- Wantedly: https://www.wantedly.com/users/17773125  
+  経歴の詳細は、Wantedly に記載しております
 
 ## お問い合わせ
 
