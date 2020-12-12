@@ -2,7 +2,7 @@
 ID: 1024
 title: about
 date: 2014-01-04 04:42:41
-updated: 2020-11-30 10:06:12
+updated: 2020-12-12 15:21:12
 slug: about
 ---
 
@@ -43,6 +43,7 @@ hiro という名前で活動しています。
 
 - GitHub: https://github.com/hiro0218  
 - CodePen: https://codepen.io/hiro0218
+- Qiita: https://qiita.com/hiro0218
 - Zenn: https://zenn.dev/hiro
 
 ## 経歴
