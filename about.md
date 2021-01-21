@@ -48,7 +48,7 @@ hiro という名前で活動しています。
 
 ## 経歴
 
-- Wantedly: https://www.wantedly.com/users/17773125  
+- Wantedly: https://www.wantedly.com/id/hiro0218  
   経歴の詳細は、Wantedly に記載しております
 
 ## お問い合わせ
