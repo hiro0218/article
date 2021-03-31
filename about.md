@@ -27,7 +27,7 @@ slug: about
 - Google AdSense: [ポリシーと規約](https://policies.google.com/technologies/ads?hl=ja)
 - Amazon アソシエイト: [Amazon アソシエイト・プログラム プライバシー情報](https://rcm-jp.amazon.co.jp/e/cm/privacy-policy.html?o=9)
 
-収益はドメインと VPS の費用に当てられています。
+収益はドメインなどの運営費用に当てられています。
 
 ## 訪問者の追跡
 
