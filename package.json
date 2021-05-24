@@ -23,7 +23,7 @@
     "lint-staged": "^10.5.3",
     "markdownlint-cli": "^0.27.1",
     "prettier": "2.3.0",
-    "textlint": "^11.9.1",
+    "textlint": "^12.0.0",
     "textlint-rule-preset-ja-technical-writing": "^6.0.0",
     "textlint-rule-preset-jtf-style": "^2.3.11",
     "textlint-rule-web-plus-db": "^1.1.5"
