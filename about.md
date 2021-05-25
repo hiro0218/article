@@ -21,7 +21,7 @@ slug: about
 
 当サイトの特定のページでは、第三者配信による広告サービス（Google AdSense、Amazon アソシエイト）を利用しています。
 
-収集している情報については、それぞれ以下のサイトを参照してください。
+詳細は、それぞれ以下のサイトを参照してください。
 
 - **Google AdSense:** [ポリシーと規約](https://policies.google.com/technologies/ads?hl=ja)
 - **Amazon アソシエイト:** [Amazon アソシエイト・プログラム プライバシー情報](https://rcm-jp.amazon.co.jp/e/cm/privacy-policy.html?o=9)
@@ -30,7 +30,12 @@ slug: about
 
 ### 訪問者の追跡
 
-Google Analytics / Google AdSense がアクセス情報を Cookie を通じて使用することがありますが、情報は匿名であり個人が特定されることはありません。
+当サイトのアクセス状況を把握するために[Google アナリティクス](https://marketingplatform.google.com/about/analytics/terms/jp/) を利用しています。また、アクセス情報の収集のため、[Cookie](https://policies.google.com/technologies/cookies) を通じて使用することがありますが、情報は匿名であり個人が特定されることはありません。
+
+詳細は、それぞれ以下のサイトを参照してください。
+
+- [Google アナリティクス利用規約](https://marketingplatform.google.com/about/analytics/terms/jp/)
+- [Google プライバシーポリシー](https://policies.google.com/privacy?hl=ja)
 
 ---
 
