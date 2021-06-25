@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "new": "node cli.js new",
     "lint": "markdownlint _posts",
     "lint:text": "textlint _posts",
     "format": "prettier --write _posts/*.md",
@@ -17,11 +18,15 @@
   "bugs": {
     "url": "https://github.com/hiro0218/article/issues"
   },
+  "type": "module",
   "homepage": "https://github.com/hiro0218/article",
   "devDependencies": {
+    "dayjs": "^1.10.5",
+    "fs-extra": "^10.0.0",
     "husky": "^4.3.6",
     "lint-staged": "^10.5.3",
     "markdownlint-cli": "^0.27.1",
+    "minimist": "^1.2.5",
     "prettier": "2.3.0",
     "textlint": "^12.0.0",
     "textlint-rule-preset-ja-technical-writing": "^6.0.0",
