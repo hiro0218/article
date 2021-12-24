@@ -3,6 +3,12 @@ import fs from "fs-extra";
 import path from "path";
 import minimist from "minimist";
 import dayjs from "dayjs";
+import utc from 'dayjs/plugin/utc.js';
+import tz from 'dayjs/plugin/timezone.js';
+
+dayjs.extend(utc);
+dayjs.extend(tz);
+dayjs.tz.setDefault('Asia/Tokyo');
 
 function generateFile(fullpath, content) {
   fs.outputFileSync(
@@ -30,7 +36,7 @@ function generateFile(fullpath, content) {
         [
           "---",
           `title: ""`,
-          `date: ${now.format()}`,
+          `date: ${now.utc().format()}`,
           `updated: `,
           `categories: `,
           `tags: `,
