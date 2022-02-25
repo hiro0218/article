@@ -23,13 +23,13 @@
   "homepage": "https://github.com/hiro0218/article",
   "devDependencies": {
     "dayjs": "^1.10.7",
-    "fs-extra": "^10.0.0",
+    "fs-extra": "^10.0.1",
     "husky": "^7.0.4",
-    "lint-staged": "^12.3.3",
+    "lint-staged": "^12.3.4",
     "markdownlint-cli": "^0.31.1",
     "minimist": "^1.2.5",
     "prettier": "2.5.1",
-    "textlint": "^12.1.0",
+    "textlint": "^12.1.1",
     "textlint-rule-preset-ja-technical-writing": "^7.0.0",
     "textlint-rule-preset-jtf-style": "^2.3.12",
     "textlint-rule-web-plus-db": "^1.1.5"
