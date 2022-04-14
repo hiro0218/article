@@ -38,7 +38,6 @@ function generateFile(fullpath, content) {
           `title: ""`,
           `date: ${now.utc().format()}`,
           `updated: `,
-          `categories: `,
           `tags: `,
           "---",
         ].join("\n") + "\n";
