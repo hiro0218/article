@@ -22,11 +22,11 @@
   "type": "module",
   "homepage": "https://github.com/hiro0218/article",
   "devDependencies": {
-    "dayjs": "^1.11.3",
+    "dayjs": "^1.11.4",
     "fs-extra": "^10.1.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
-    "markdownlint-cli": "^0.31.1",
+    "markdownlint-cli": "^0.32.0",
     "minimist": "^1.2.6",
     "prettier": "2.7.1",
     "textlint": "^12.2.1",
