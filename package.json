@@ -36,7 +36,7 @@
   },
   "lint-staged": {
     "**/*.md": [
-      "prettier --write --cache"
+      "prettier --cache --write --cache"
     ]
   }
 }
