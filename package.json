@@ -36,7 +36,7 @@
   },
   "lint-staged": {
     "**/*.md": [
-      "prettier --cache --write --cache",
+      "prettier --cache --write",
       "textlint --fix"
     ]
   }
