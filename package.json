@@ -26,17 +26,18 @@
     "fs-extra": "^10.1.0",
     "husky": "^8.0.2",
     "lint-staged": "^13.1.0",
-    "markdownlint-cli": "^0.32.2",
+    "markdownlint-cli": "^0.33.0",
     "minimist": "^1.2.7",
     "prettier": "2.8.1",
-    "textlint": "^12.2.2",
+    "textlint": "^12.5.1",
     "textlint-rule-preset-ja-technical-writing": "^7.0.0",
     "textlint-rule-preset-jtf-style": "^2.3.13",
     "textlint-rule-web-plus-db": "^1.1.5"
   },
   "lint-staged": {
     "**/*.md": [
-      "prettier --cache --write --cache"
+      "prettier --cache --write --cache",
+      "textlint --fix"
     ]
   }
 }
