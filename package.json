@@ -23,11 +23,11 @@
   "homepage": "https://github.com/hiro0218/article",
   "devDependencies": {
     "dayjs": "^1.11.7",
-    "fs-extra": "^10.1.0",
+    "fs-extra": "^11.1.0",
     "husky": "^8.0.2",
     "lint-staged": "^13.1.0",
     "markdownlint-cli": "^0.33.0",
-    "minimist": "^1.2.7",
+    "minimist": "^1.2.8",
     "prettier": "2.8.1",
     "textlint": "^13.3.0",
     "textlint-filter-rule-comments": "^1.2.2",
