@@ -15,6 +15,12 @@
     },
     "web-plus-db": true,
     "preset-ja-technical-writing": true,
-    "jtf-style/4.2.7.コロン(：)": false
+    "jtf-style/4.2.7.コロン(：)": false,
+    "no-mix-dearu-desumasu": {
+      "preferInHeader": "",
+      "preferInBody": "である",
+      "preferInList": "である",
+      "strict": true
+    }
   }
 }
