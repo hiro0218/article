@@ -11,11 +11,11 @@
   },
   "rules": {
     "preset-jtf-style": {
-      "3.1.1.全角文字と半角文字の間": false
+      "3.1.1.全角文字と半角文字の間": false,
+      "4.2.7.コロン(：)": false
     },
     "web-plus-db": true,
     "preset-ja-technical-writing": true,
-    "jtf-style/4.2.7.コロン(：)": false,
     "no-mix-dearu-desumasu": {
       "preferInHeader": "",
       "preferInBody": "である",
