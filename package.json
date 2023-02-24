@@ -22,6 +22,7 @@
   "type": "module",
   "homepage": "https://github.com/hiro0218/article",
   "devDependencies": {
+    "@textlint/textlint-plugin-markdown": "^13.3.0",
     "dayjs": "^1.11.7",
     "fs-extra": "^11.1.0",
     "husky": "^8.0.2",
