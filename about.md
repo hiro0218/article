@@ -7,8 +7,6 @@ slug: about
 
 <!-- textlint-disable no-mix-dearu-desumasu -->
 
-## サイトについて
-
 <a href="https://b.0218.jp/"><ruby>零<rp>(</rp><rt>ぜろ</rt><rp>)</rp>弐<rp>(</rp><rt>に</rt><rp>)</rp>壱<rp>(</rp><rt>いち</rt><rp>)</rp>蜂<rp>(</rp><rt>はち</rt><rp>)</rp></ruby></a>は、仕事や日常または趣味などから得た知見を備忘録として書き溜めているブログです。  
 ブログの更新頻度は「気が向いた時」です。
 
