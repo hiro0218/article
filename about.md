@@ -25,18 +25,12 @@ slug: about
 
 hiro という名義で活動しています。アカウント名は hiro もしくは hiro0218 を利用していることが多いです。
 
-- GitHub:  
-  https://github.com/hiro0218
-- CodePen:  
-  https://codepen.io/hiro0218
-- Qiita:  
-  https://qiita.com/hiro0218
-- Zenn:  
-  https://zenn.dev/hiro
-- npm:  
-  https://www.npmjs.com/~hiro0218
-- Wantedly:  
-  https://www.wantedly.com/id/hiro0218
+- **GitHub:** https://github.com/hiro0218
+- **CodePen:** https://codepen.io/hiro0218
+- **Qiita:** https://qiita.com/hiro0218
+- **Zenn:** https://zenn.dev/hiro
+- **npm:** https://www.npmjs.com/~hiro0218
+- **Wantedly:** https://www.wantedly.com/id/hiro0218
 
 ## お問い合わせ
 
