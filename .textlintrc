@@ -32,6 +32,9 @@
       },
       "no-exclamation-question-mark": false,
       "no-hankaku-kana": false
+    },
+    "ja-no-successive-word": {
+      "allowOnomatopee": true
     }
   }
 }
