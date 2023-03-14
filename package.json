@@ -7,6 +7,7 @@
     "new": "node cli.js new",
     "lint:text": "textlint _posts",
     "format": "prettier --write _posts/*.md",
+    "link:check": "markdown-link-check _posts/*.md --config markdown-link-check.config.json",
     "prepare": "husky install"
   },
   "repository": {
@@ -23,6 +24,7 @@
     "dayjs": "^1.11.7",
     "fs-extra": "^11.1.0",
     "husky": "^8.0.3",
+    "markdown-link-check": "^3.10.3",
     "minimist": "^1.2.8",
     "nano-staged": "^0.8.0",
     "prettier": "2.8.4",
