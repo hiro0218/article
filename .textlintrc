@@ -1,6 +1,12 @@
 {
   "filters": {
-    "comments": true
+    "comments": true,
+    "allowlist": {
+      "allow": [
+        "プレフィックス",
+        "ほかの"
+      ]
+    }
   },
   "plugins": {
     "@textlint/markdown": {
