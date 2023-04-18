@@ -48,7 +48,10 @@
         "strict": true
       },
       "sentence-length": {
-        "max": 140
+        "max": 140,
+        "skipPatterns": [
+          "/\\[.*?\\]/"
+        ]
       },
       "no-exclamation-question-mark": false,
       "no-hankaku-kana": false
