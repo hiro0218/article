@@ -40,7 +40,7 @@
   "nano-staged": {
     "**/*.md": [
       "prettier --cache --write",
-      "textlint --fix"
+      "textlint --cache --fix"
     ]
   }
 }
