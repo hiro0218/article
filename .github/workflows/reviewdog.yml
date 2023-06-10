@@ -5,9 +5,9 @@ jobs:
     name: runner / markdownlint
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
       - name: markdownlint
-        uses: prologic/action-markdownlint@v0.1
+        uses: prologic/action-markdownlint@v0.10
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-pr-check
