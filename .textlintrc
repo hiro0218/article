@@ -3,6 +3,8 @@
     "comments": true,
     "allowlist": {
       "allow": [
+        "IE",
+        "Web",
         "アプリ",
         "プレフィックス",
         "パスカルケース",
