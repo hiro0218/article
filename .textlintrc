@@ -70,6 +70,7 @@
     },
     "ja-no-successive-word": {
       "allowOnomatopee": true
-    }
+    },
+    "no-doubled-conjunction": true,
   }
 }
