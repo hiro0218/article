@@ -12,7 +12,7 @@
         "サーバー",
         "テクノロジー",
         "ポリフィル",
-        "ウェブ",
+        "/(?:([^/])ウェブ)|(?:ウェブ([^/\+]))/",
         "ユーザービリティ",
         "様々",
         "言え",
@@ -45,7 +45,7 @@
       "rulePaths": [
         "./node_modules/prh/prh-rules/media/WEB+DB_PRESS.yml",
         "./node_modules/prh/prh-rules/media/techbooster.yml"
-      ]
+      ],
     },
     "preset-jtf-style": {
       "1.1.3.箇条書き": false,
