@@ -6,9 +6,11 @@ import dayjs from 'dayjs';
 import utc from 'dayjs/plugin/utc.js';
 import tz from 'dayjs/plugin/timezone.js';
 
+const timezone = 'Asia/Tokyo';
+
 dayjs.extend(utc);
 dayjs.extend(tz);
-dayjs.tz.setDefault('Asia/Tokyo');
+dayjs.tz.setDefault(timezone);
 
 /**
  * generate file
@@ -53,12 +55,25 @@ function createMarkdownFile(filePath, timestamp) {
     const argv = minimist(process.argv.slice(2), {
       alias: {
         n: 'new',
+        d: 'date',
       },
     });
 
+    const hasNew = argv._.includes('n') || argv._.includes('new');
+    const hasDate = argv.d || argv.date;
+
     // generate markdown
-    if (argv._.includes('n') || argv._.includes('new')) {
-      createMarkdownFile(process.cwd(), dayjs());
+    if (hasNew) {
+      // 妥当性チェック
+      if (hasDate) {
+        if (!dayjs(String(hasDate)).isValid()) {
+          throw new Error('invalid date');
+        }
+      }
+
+      const timestamp = hasDate ? dayjs(String(hasDate)) : dayjs();
+
+      createMarkdownFile(process.cwd(), timestamp);
     }
   } catch (error) {
     console.error(error);
