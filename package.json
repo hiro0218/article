@@ -8,7 +8,7 @@
     "lint:text": "textlint _posts",
     "format": "prettier --write _posts/*.md",
     "link:check": "markdown-link-check _posts/*.md --config markdown-link-check.config.json",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
@@ -23,7 +23,7 @@
   "devDependencies": {
     "dayjs": "^1.11.10",
     "fs-extra": "^11.1.1",
-    "husky": "^8.0.3",
+    "husky": "^9.0.10",
     "markdown-link-check": "^3.11.2",
     "minimist": "^1.2.8",
     "nano-staged": "^0.8.0",
