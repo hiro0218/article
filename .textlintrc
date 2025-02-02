@@ -72,13 +72,44 @@
         "strict": true
       },
       "sentence-length": {
-        "max": 140,
+        "max": 150,
         "skipPatterns": [
           "/\\[.*?\\]/"
         ]
       },
       "no-exclamation-question-mark": false,
-      "no-hankaku-kana": false
+      "no-hankaku-kana": false,
+      "ja-no-mixed-period": {
+        "allowPeriodMarks": [
+          ":",
+          "："
+        ]
+      },
+      "no-doubled-joshi": {
+        "strict": false,
+        "allow": [
+          "も",
+          "や",
+          "か"
+        ],
+        "separatorCharacters": [
+          ",",
+          "，",
+          "、",
+          ".",
+          "．",
+          "。",
+          "?",
+          "!",
+          "？",
+          "！",
+          "「",
+          "」",
+          "\"",
+          "”",
+          "“"
+        ]
+      },
     },
     "ja-no-successive-word": {
       "allowOnomatopee": true
