@@ -1,8 +1,8 @@
-# VS Code Docs Writing Guidelines
+# Docs Writing Guidelines
 
 ## Introduction
 
-These are our VS Code documentation writing style guidelines.
+These are our documentation writing style guidelines.
 
 ## General Style Tips
 
@@ -10,6 +10,8 @@ These are our VS Code documentation writing style guidelines.
 - Talk like a person.
 - Simpler is better.
 - Be brief. Give customers just enough information to make decisions confidently. Prune every excess word.
+- Follow the textlint settings.
+- Sentences are written in a "だ・である" style.
 
 ## Alerts
 
