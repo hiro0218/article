@@ -28,14 +28,14 @@
     "minimist": "^1.2.8",
     "nano-staged": "^0.8.0",
     "prettier": "3.5.0",
-    "textlint": "^14.4.2",
+    "textlint": "^14.5.0",
     "textlint-filter-rule-allowlist": "^4.0.0",
     "textlint-filter-rule-comments": "^1.2.2",
     "textlint-rule-ja-no-successive-word": "^2.0.1",
     "textlint-rule-no-doubled-conjunction": "^3.0.0",
     "textlint-rule-no-mix-dearu-desumasu": "^6.0.4",
     "textlint-rule-preset-ja-technical-writing": "^12.0.2",
-    "textlint-rule-preset-jtf-style": "^3.0.1",
+    "textlint-rule-preset-jtf-style": "^3.0.2",
     "textlint-rule-prh": "^6.0.0"
   },
   "nano-staged": {
