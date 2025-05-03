@@ -24,11 +24,11 @@
     "dayjs": "^1.11.13",
     "fs-extra": "^11.3.0",
     "husky": "^9.1.7",
-    "markdown-link-check": "^3.13.6",
+    "markdown-link-check": "^3.13.7",
     "minimist": "^1.2.8",
     "nano-staged": "^0.8.0",
-    "prettier": "3.5.0",
-    "textlint": "^14.6.0",
+    "prettier": "3.5.3",
+    "textlint": "^14.7.1",
     "textlint-filter-rule-allowlist": "^4.0.0",
     "textlint-filter-rule-comments": "^1.2.2",
     "textlint-rule-ja-no-successive-word": "^2.0.1",
@@ -36,7 +36,7 @@
     "textlint-rule-no-mix-dearu-desumasu": "^6.0.4",
     "textlint-rule-preset-ja-technical-writing": "^12.0.2",
     "textlint-rule-preset-jtf-style": "^3.0.2",
-    "textlint-rule-prh": "^6.0.0"
+    "textlint-rule-prh": "^6.1.0"
   },
   "nano-staged": {
     "**/*.md": [
