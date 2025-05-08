@@ -3,6 +3,7 @@ title: 'Example Article'
 date: 2006-02-18 12:00:00
 updated:
 tags:
+noindex: true
 ---
 
 ## 背景
