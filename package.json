@@ -21,6 +21,7 @@
   "type": "module",
   "homepage": "https://github.com/hiro0218/article",
   "devDependencies": {
+    "@textlint-ja/textlint-rule-preset-ai-writing": "^1.5.0",
     "dayjs": "^1.11.13",
     "fs-extra": "^11.3.0",
     "husky": "^9.1.7",

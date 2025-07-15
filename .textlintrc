@@ -130,5 +130,35 @@
       "allowOnomatopee": true
     },
     "no-doubled-conjunction": true,
+    "@textlint-ja/preset-ai-writing": {
+      "no-ai-list-formatting": {
+        "allows": ["許可したいテキスト", "/正規表現パターン/i"],
+        "disableBoldListItems": false,
+        "disableEmojiListItems": false
+      },
+      "no-ai-hype-expressions": {
+        "allows": ["許可したいテキスト", "/正規表現パターン/"],
+        "disableAbsolutenessPatterns": false,
+        "disableAbstractPatterns": false,
+        "disabledPredictivePatterns": false
+      },
+      "no-ai-colon-continuation": {
+        "allows": ["許可したいテキスト", "/正規表現パターン/"],
+        "disableCodeBlock": false,
+        "disableList": false,
+        "disableQuote": false,
+        "disableTable": false
+      },
+      "ai-tech-writing-guideline": {
+        "severity": "info",
+        "allows": ["許可したいテキスト", "/正規表現パターン/"],
+        "disableRedundancyGuidance": false,
+        "disableVoiceGuidance": false,
+        "disableClarityGuidance": false,
+        "disableConsistencyGuidance": false,
+        "disableStructureGuidance": false,
+        "enableDocumentAnalysis": true
+      }
+    },
   }
 }
