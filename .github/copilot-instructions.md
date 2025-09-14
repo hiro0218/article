@@ -48,6 +48,8 @@ npm run format        # Prettierでフォーマット
 npm run link:check    # リンク切れチェック
 ```
 
+**⚠️ 重要**: `prettier --write`や`textlint --fix`を使用する際は、必ず対象ファイルを明示的に指定すること。ディレクトリ全体やワイルドカードでの一括実行は禁止。
+
 ## 記事執筆スタイル
 
 ### フロントマター（🔴 必須）
@@ -358,6 +360,19 @@ npm run lint:text          # 1. エラー内容を確認
 npm run format            # 2. 自動修正を実行
 git add .                 # 3. 修正内容をステージング
 git commit -m "message"   # 4. 再度コミット
+```
+
+**⚠️ 注意**: `prettier --write`や`textlint --fix`のようなフォーマット・修正ツールを直接実行する場合は、必ず対象ファイルを指定すること。
+
+```bash
+# ✅ 正しい使用方法（ファイル指定）
+prettier --write _posts/202507142152.md
+textlint --fix _posts/specific-file.md
+
+# ❌ 絶対禁止（ディレクトリ全体・ワイルドカード）
+prettier --write .
+prettier --write _posts/
+textlint --fix _posts/*.md
 ```
 
 ## エラー発生時の対処法
