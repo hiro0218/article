@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import fs from 'fs-extra';
+import fs from 'fs';
 import path from 'path';
 import minimist from 'minimist';
 import dayjs from 'dayjs';
@@ -23,11 +23,12 @@ dayjs.tz.setDefault(TIMEZONE);
  * @throws {Error} ファイルが既に存在する場合（EEXIST）
  */
 function generateFile(fullpath, content) {
-  fs.outputFileSync(
-    fullpath,
-    content,
-    { flag: FILE_CREATE_FLAG }, // not overwrite
-  );
+  // 親ディレクトリを再帰的に作成
+  const dir = path.dirname(fullpath);
+  fs.mkdirSync(dir, { recursive: true });
+
+  // ファイル書き込み（上書き防止）
+  fs.writeFileSync(fullpath, content, { flag: FILE_CREATE_FLAG });
 }
 
 /**
