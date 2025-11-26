@@ -70,12 +70,12 @@ function createMarkdownFile(filePath, timestamp) {
     if (hasNew) {
       // 妥当性チェック
       if (hasDate) {
-        if (!dayjs(String(hasDate)).isValid()) {
+        if (!dayjs(hasDate).isValid()) {
           throw new Error('invalid date');
         }
       }
 
-      const timestamp = hasDate ? dayjs(String(hasDate)) : dayjs();
+      const timestamp = hasDate ? dayjs(hasDate) : dayjs();
 
       createMarkdownFile(process.cwd(), timestamp);
     }
