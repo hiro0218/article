@@ -6,11 +6,15 @@ import dayjs from 'dayjs';
 import utc from 'dayjs/plugin/utc.js';
 import tz from 'dayjs/plugin/timezone.js';
 
-const timezone = 'Asia/Tokyo';
+const TIMEZONE = 'Asia/Tokyo';
+const POSTS_DIR = '_posts';
+const FILENAME_FORMAT = 'YYYYMMDDHHmm';
+const FILE_EXTENSION = '.md';
+const FILE_CREATE_FLAG = 'wx';
 
 dayjs.extend(utc);
 dayjs.extend(tz);
-dayjs.tz.setDefault(timezone);
+dayjs.tz.setDefault(TIMEZONE);
 
 /**
  * generate file
@@ -21,7 +25,7 @@ function generateFile(fullpath, content) {
   fs.outputFileSync(
     fullpath,
     content,
-    { flag: 'wx' }, // not overwrite
+    { flag: FILE_CREATE_FLAG }, // not overwrite
   );
 }
 
@@ -31,9 +35,9 @@ function generateFile(fullpath, content) {
  * @param {dayjs.Dayjs} timestamp
  */
 function createMarkdownFile(filePath, timestamp) {
-  const slug = timestamp.format('YYYYMMDDHHmm');
-  const fileName = `${slug}.md`;
-  const fullpath = path.join(filePath, `_posts/${fileName}`);
+  const slug = timestamp.format(FILENAME_FORMAT);
+  const fileName = `${slug}${FILE_EXTENSION}`;
+  const fullpath = path.join(filePath, POSTS_DIR, fileName);
   // prettier-ignore
   const content =
     [
