@@ -17,9 +17,10 @@ dayjs.extend(tz);
 dayjs.tz.setDefault(TIMEZONE);
 
 /**
- * generate file
- * @param {string} fullpath
- * @param {string} content
+ * ファイルを生成する（既存ファイルの上書き防止）
+ * @param {string} fullpath - 生成するファイルの絶対パス
+ * @param {string} content - ファイルに書き込む内容
+ * @throws {Error} ファイルが既に存在する場合（EEXIST）
  */
 function generateFile(fullpath, content) {
   fs.outputFileSync(
@@ -30,9 +31,10 @@ function generateFile(fullpath, content) {
 }
 
 /**
- * create markdown file
- * @param {string} filePath
- * @param {dayjs.Dayjs} timestamp
+ * マークダウンファイルを作成する
+ * @param {string} filePath - ベースディレクトリのパス（通常はprocess.cwd()）
+ * @param {dayjs.Dayjs} timestamp - 記事の作成日時（Asia/Tokyoタイムゾーン）
+ * @throws {Error} ファイルが既に存在する場合
  */
 function createMarkdownFile(filePath, timestamp) {
   const slug = timestamp.format(FILENAME_FORMAT);
