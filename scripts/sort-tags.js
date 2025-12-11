@@ -48,8 +48,8 @@ async function sortTagsInFile(filePath) {
     // ファイル読み込み
     const content = await fs.readFile(filePath, 'utf-8');
 
-    // フロントマターのパース
-    const { data, content: body } = matter(content);
+    // フロントマターのパース（tags抽出のみ）
+    const { data } = matter(content);
 
     // tagsが存在しない、配列でない、または1個以下の場合はスキップ
     if (!data.tags || !Array.isArray(data.tags) || data.tags.length <= 1) {
@@ -64,9 +64,10 @@ async function sortTagsInFile(filePath) {
       return;
     }
 
-    // フロントマターを更新
-    data.tags = sortedTags;
-    const updated = matter.stringify(body, data);
+    // tags部分のみを置き換える（他のフィールドは保持）
+    const tagsSection = sortedTags.map((tag) => `  - ${tag}`).join('\n');
+    const tagsRegex = /^tags:\s*\n((?:  - .+\n?)+)/m;
+    const updated = content.replace(tagsRegex, `tags:\n${tagsSection}\n`);
 
     // ファイルに書き戻し
     await fs.writeFile(filePath, updated, 'utf-8');
