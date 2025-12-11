@@ -23,6 +23,7 @@
   "devDependencies": {
     "@textlint-ja/textlint-rule-preset-ai-writing": "^1.6.1",
     "dayjs": "^1.11.19",
+    "gray-matter": "^4.0.3",
     "husky": "^9.1.7",
     "markdown-link-check": "^3.14.2",
     "minimist": "^1.2.8",
@@ -40,6 +41,7 @@
   },
   "nano-staged": {
     "**/*.md": [
+      "node scripts/sort-tags.js",
       "prettier --cache --write",
       "textlint --cache --fix"
     ]
