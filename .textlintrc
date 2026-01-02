@@ -22,6 +22,8 @@
         "キャラクター",
         "メンテナ",
         "Grid",
+        "ワード",
+        "保てる",
         "仕組み",
         "既定",
         "同士",
@@ -34,14 +36,14 @@
         "0から",
         "事前準備",
         "master",
-        "/(?:([^/])ウェブ)|(?:ウェブ([^/\+]))/",
-        "/(?:([^/])関わらず)|(?:関わらず([^/\+]))/",
-        "/(?:([^/])他)|(?:他([^/\+]))/",
-        "/(?:([^/])欲し)|(?:欲し([^/\+]))/",
-        "/(?:([^/])(?:言わ|言え|繋が|基づ|持つ))|(?:(?:言わ|言え|繋が|基づ|持つ)([^/\+]))/",
-        "/(?:([^/])(?:例えば|全て|全く|改めて|はじめ|ほかの))|(?:(?:例えば|全て|全く|改めて|はじめ|ほかの)([^/\+]))/",
-        "/(?:([^/])(?:言われる|は他に|した上|に従って))|(?:(?:言われる|は他に|した上|に従って)([^/\+]))/",
-        "/(?:([^/])(?:是非|様々|後々))|(?:(?:是非|様々|後々)([^/\+]))/"
+        "/(?:([^/])ウェブ)|(?:ウェブ([^/+]))/",
+        "/(?:([^/])関わらず)|(?:関わらず([^/+]))/",
+        "/(?:([^/])他)|(?:他([^/+]))/",
+        "/(?:([^/])欲し)|(?:欲し([^/+]))/",
+        "/(?:([^/])(?:言わ|言え|繋が|基づ|持つ))|(?:(?:言わ|言え|繋が|基づ|持つ)([^/+]))/",
+        "/(?:([^/])(?:例えば|全て|全く|改めて|はじめ|ほかの))|(?:(?:例えば|全て|全く|改めて|はじめ|ほかの)([^/+]))/",
+        "/(?:([^/])(?:言われる|は他に|した上|に従って))|(?:(?:言われる|は他に|した上|に従って)([^/+]))/",
+        "/(?:([^/])(?:是非|様々|後々))|(?:(?:是非|様々|後々)([^/+]))/"
       ]
     }
   },
@@ -57,7 +59,7 @@
       "rulePaths": [
         "./node_modules/prh/prh-rules/media/WEB+DB_PRESS.yml",
         "./node_modules/prh/prh-rules/media/techbooster.yml"
-      ],
+      ]
     },
     "preset-jtf-style": {
       "1.1.3.箇条書き": false,
@@ -113,7 +115,7 @@
           "”",
           "“"
         ]
-      },
+      }
     },
     "ja-no-successive-word": {
       "allowOnomatopee": true
@@ -121,18 +123,27 @@
     "no-doubled-conjunction": true,
     "@textlint-ja/preset-ai-writing": {
       "no-ai-list-formatting": {
-        "allows": ["許可したいテキスト", "/正規表現パターン/i"],
+        "allows": [
+          "許可したいテキスト",
+          "/正規表現パターン/i"
+        ],
         "disableBoldListItems": false,
         "disableEmojiListItems": false
       },
       "no-ai-hype-expressions": {
-        "allows": ["許可したいテキスト", "/正規表現パターン/"],
+        "allows": [
+          "許可したいテキスト",
+          "/正規表現パターン/"
+        ],
         "disableAbsolutenessPatterns": false,
         "disableAbstractPatterns": false,
         "disabledPredictivePatterns": false
       },
       "no-ai-colon-continuation": {
-        "allows": ["許可したいテキスト", "/正規表現パターン/"],
+        "allows": [
+          "許可したいテキスト",
+          "/正規表現パターン/"
+        ],
         "disableCodeBlock": false,
         "disableList": false,
         "disableQuote": false,
@@ -140,7 +151,10 @@
       },
       "ai-tech-writing-guideline": {
         "severity": "info",
-        "allows": ["許可したいテキスト", "/正規表現パターン/"],
+        "allows": [
+          "許可したいテキスト",
+          "/正規表現パターン/"
+        ],
         "disableRedundancyGuidance": false,
         "disableVoiceGuidance": false,
         "disableClarityGuidance": false,
@@ -148,6 +162,6 @@
         "disableStructureGuidance": false,
         "enableDocumentAnalysis": true
       }
-    },
+    }
   }
 }
