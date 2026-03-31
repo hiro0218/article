@@ -57,6 +57,8 @@ paths:
 
 ## AI表現の削除
 
+文体のトーン定義は [writing-voice.md](./writing-voice.md) を参照。
+
 ### 「〜について説明する」
 
 ```markdown
