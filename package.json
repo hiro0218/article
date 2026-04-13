@@ -27,7 +27,7 @@
     "husky": "^9.1.7",
     "markdown-link-check": "^3.14.2",
     "minimist": "^1.2.8",
-    "nano-staged": "^0.9.0",
+    "nano-staged": "^1.0.2",
     "prettier": "3.8.2",
     "textlint": "^15.5.4",
     "textlint-filter-rule-allowlist": "^4.0.0",
