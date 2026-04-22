@@ -123,6 +123,18 @@
     "ja-no-successive-word": {
       "allowOnomatopee": true
     },
+    "preset-ja-spacing": {
+      "ja-space-between-half-and-full-width": {
+        "space": "never"
+      },
+      "ja-nakaguro-or-halfwidth-space-between-katakana": false,
+      "ja-no-space-around-parentheses": false,
+      "ja-no-space-between-full-width": false,
+      "ja-space-after-exclamation": false,
+      "ja-space-after-question": false,
+      "ja-space-around-code": false,
+      "ja-space-around-link": false
+    },
     "no-doubled-conjunction": true,
     "@textlint-ja/preset-ai-writing": {
       "no-ai-list-formatting": {
