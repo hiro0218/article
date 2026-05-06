@@ -24,6 +24,7 @@ const alphaNumRegex = /^[a-zA-Z0-9]/;
  * - 各タグは articles.length の降順、同数ならタグ名順で並べる
  * - articles はファイル名の日時降順で並べる
  * - relatedTags は共起件数、全体の記事数、タグ名の順に並べた上位だけを出す
+ * - relatedTags は1-hopの共起タグであり、参照時に再帰展開しない
  */
 function compareTagNames(a, b) {
   const aIsAlphaNum = alphaNumRegex.test(a);
