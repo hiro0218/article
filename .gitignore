@@ -2,3 +2,5 @@ node_modules
 .DS_Store
 .textlintcache
 .obsidian
+tag-index.json
+.vscode/article-tags.code-snippets
