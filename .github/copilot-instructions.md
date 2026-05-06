@@ -17,6 +17,7 @@
 記事同士の関連性、既存記事調査、タグ選定、記事群を比較する場合は、本文を横断検索する前に `tag-index.json` を確認する。
 
 - `tag-index.json` は `{ name, articles, relatedTags }` の配列であり、タグは `name` で探す
+- `article-index.json` は `{ path, title, date, updated, tags }` の配列であり、候補記事の本文を読む前にタイトルとタグを確認する
 - 対象記事がある場合: その記事のフロントマターの `tags` を読み、`tag-index.json` から同タグの記事と `relatedTags` を確認する
 - 対象タグがある場合: `tag-index.json` の該当タグから `articles` を確認する
 - 候補は同タグの記事を優先し、対象記事がある場合は対象記事自身を除外する
@@ -26,10 +27,11 @@
 - `relatedTags` からさらに別タグの `relatedTags` をたどる再帰展開は禁止する
 - 記事本文を読むのは、タグ索引で候補を絞った後にする
 - `tag-index.json` 全体を回答に貼らず、必要なタグ・記事候補だけを抽出する
+- `article-index.json` 全体を回答に貼らず、必要な記事候補だけを抽出する
 - `relatedTags` は関連度順、`articles` は新しい順として扱う
-- `tag-index.json` はコミットしないローカル生成物である。初回は `npm install` 後の `postinstall` で生成される
-- `tag-index.json` が存在しない、または古い可能性がある場合は `npm run tags:index` で生成してから読む
-- push時は `npm run tags:export` で `tag-index.json` とタグスニペットを再生成する
+- `tag-index.json` と `article-index.json` はコミットしないローカル生成物である。初回は `npm install` 後の `postinstall` で生成される
+- `tag-index.json` または `article-index.json` が存在しない、または古い可能性がある場合は `npm run tags:export` で生成してから読む
+- push時は `npm run tags:export` で `tag-index.json`、`article-index.json` とタグスニペットを再生成する
 
 詳細な候補選定が必要な場合は `.claude/skills/article-context-router/SKILL.md` の手順に従う。
 

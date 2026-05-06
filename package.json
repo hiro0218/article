@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "new": "node cli.js new",
+    "articles:index": "node scripts/export-article-index.js",
     "tags:index": "node scripts/export-tags.js",
-    "tags:export": "npm run tags:index && node scripts/export-tag-snippets.js",
+    "tags:export": "npm run tags:index && npm run articles:index && node scripts/export-tag-snippets.js",
     "tags:snippets": "node scripts/export-tag-snippets.js",
     "lint:text": "textlint --cache _posts",
     "format": "prettier --write _posts/*.md",
