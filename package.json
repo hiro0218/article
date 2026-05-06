@@ -5,9 +5,13 @@
   "main": "index.js",
   "scripts": {
     "new": "node cli.js new",
+    "tags:index": "node scripts/export-tags.js",
+    "tags:export": "npm run tags:index && node scripts/export-tag-snippets.js",
+    "tags:snippets": "node scripts/export-tag-snippets.js",
     "lint:text": "textlint --cache _posts",
     "format": "prettier --write _posts/*.md",
     "link:check": "markdown-link-check _posts/*.md --config markdown-link-check.config.json",
+    "postinstall": "npm run tags:export",
     "prepare": "husky"
   },
   "repository": {
@@ -41,6 +45,9 @@
     "textlint-rule-prh": "^6.1.0"
   },
   "nano-staged": {
+    "**/*.{js,json,yml,yaml}": [
+      "prettier --cache --write"
+    ],
     "**/*.md": [
       "node scripts/sort-tags.js",
       "prettier --cache --write",
