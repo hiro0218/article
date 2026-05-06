@@ -1,0 +1,10 @@
+{
+  "[markdown]": {
+    "editor.quickSuggestions": {
+      "comments": false,
+      "other": true,
+      "strings": true
+    },
+    "editor.snippetSuggestions": "top"
+  }
+}
