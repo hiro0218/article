@@ -12,7 +12,7 @@ paths:
 npx textlint _posts/202501011234.md          # チェック
 npx textlint --fix _posts/202501011234.md     # 自動修正
 npx prettier --write _posts/202501011234.md   # フォーマット
-npm run link:check                            # リンク切れ（全体）
+npx markdown-link-check _posts/202501011234.md --config markdown-link-check.config.json  # リンク切れ
 ```
 
 ## 禁止パターン
@@ -24,6 +24,8 @@ npx textlint --fix .              # カレントディレクトリ全体
 npx prettier --write _posts/      # ディレクトリ指定
 npm run lint:text                  # 引数なし全体実行
 npm run format                     # 全体フォーマット
+npm run link:check                 # 全記事リンク検証
+npx markdown-link-check _posts/*.md --config markdown-link-check.config.json  # ワイルドカード
 ```
 
 違反時は `git restore` で戻し、1ファイルずつやり直す。

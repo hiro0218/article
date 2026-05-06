@@ -10,6 +10,7 @@
 - `textlint-disable`/`textlint-enable` コメントの削除・移動禁止
 - 「AI編集禁止」コメント範囲は編集しない
 - textlintは `npx textlint {filepath}` で1ファイルずつ実行（ディレクトリ・ワイルドカード禁止）
+- AIは `npm run link:check` を実行しない。リンク検証は `npx markdown-link-check {filepath} --config markdown-link-check.config.json` で対象ファイルだけ実行する（ディレクトリ・ワイルドカード禁止）
 
 ## 記事解析ルール
 
@@ -51,18 +52,18 @@
 - 実行可能なサンプルを提供し、動作確認済みであること
 - 一次資料（RFC・公式ドキュメント）で裏付け、`## 参考` にインラインリンクで記載
 - セキュリティリスクのある手法: リスク説明 + 適用場面限定 + 安全な代替手段
-- 構成テンプレート → [article-templates.md](.claude/rules/writing/article-templates.md)
+- 構成テンプレート: `.claude/rules/writing/article-templates.md`
 
 **コラム・雑記（~20%）**: 構成自由。コード例不問（言語指定のみ必須）。
 
-編集パターン → [editing-examples.md](.claude/rules/writing/editing-examples.md)
+編集パターン: `.claude/rules/writing/editing-examples.md`
 
 ## 品質検証
 
 ```bash
 npx textlint {filepath}
 npx prettier --write {filepath}
-npm run link:check
+npx markdown-link-check {filepath} --config markdown-link-check.config.json
 ```
 
 エラーゼロで完了とする。
