@@ -14,7 +14,7 @@ description: tag-index.json を使って、記事調査・関連記事候補・�
 - 記事に付けるタグを選ぶ
 - 同じ話題の記事群を比較する
 
-## tag-index.json の契約
+## 索引の契約
 
 `tag-index.json` は配列である。タグは `name` で探す。
 
@@ -30,6 +30,18 @@ description: tag-index.json を使って、記事調査・関連記事候補・�
 - `relatedTags`: 関連度順
 - 件数は `articles.length` から読む
 
+`article-index.json` も配列である。候補記事のタイトルとタグは、本文を読む前にここで確認する。
+
+```json
+{
+  "path": "_posts/202605021758.md",
+  "title": "...",
+  "date": "...",
+  "updated": "...",
+  "tags": ["..."]
+}
+```
+
 ## ワークフロー
 
 1. 対象が記事なら、本文ではなくフロントマターの `tags` だけを先に読む。
@@ -38,7 +50,8 @@ description: tag-index.json を使って、記事調査・関連記事候補・�
 4. 対象記事がある場合は、対象記事自身を候補から除外する。
 5. 複数タグがある場合は、複数の対象タグに出る記事を優先する。
 6. 同タグ候補が少ない場合、または周辺話題まで求められている場合だけ、`relatedTags` 上位から候補を広げる。
-7. 候補を絞った後で、必要な記事本文だけを読む。
+7. 候補のタイトルとタグを `article-index.json` で確認し、読む候補を最終決定する。
+8. 候補を絞った後で、必要な記事本文だけを読む。
 
 ## 候補の出し方
 
@@ -48,7 +61,7 @@ description: tag-index.json を使って、記事調査・関連記事候補・�
   2. ユーザーの依頼語または対象記事タイトルと近いタイトルの記事
   3. `articles` の順で新しい記事
 - 対象タグ名だけのタイトル一致は、同タグ根拠と重複するため追加の優先理由にしない。
-- 関連タグに広げる場合は、`relatedTags` 上位3タグまでを見る。
+- 関連タグに広げる場合は、`relatedTags` 上位3タグまでを見る。展開は1階層までとし、関連タグの先の `relatedTags` はたどらない。
 - 関連タグごとの候補は最大3件に留める。
 - 「重複」「前提」「補完」は本文を読む前には仮分類として扱う。
 - 本文を読む前に「重複なし」と確定しない。
@@ -62,6 +75,12 @@ description: tag-index.json を使って、記事調査・関連記事候補・�
 node -e "const tags=require('./tag-index.json'); console.log(JSON.stringify(tags.find(t=>t.name==='TypeScript'), null, 2));"
 ```
 
+候補記事のタイトルとタグを確認する。
+
+```bash
+node -e "const arts=require('./article-index.json'); const paths=['_posts/202605021758.md']; console.log(JSON.stringify(arts.filter(a=>paths.includes(a.path)), null, 2));"
+```
+
 記事のフロントマターだけを確認する。
 
 ```bash
@@ -70,9 +89,9 @@ sed -n '1,/^---$/p' _posts/202605021758.md
 
 ## 出力ルール
 
-- `tag-index.json` 全体を貼らない。
+- `tag-index.json` / `article-index.json` の全体を貼らない。
 - 候補の根拠になったタグ名を示す。
 - `articles` は新しい順、`relatedTags` は関連度順として説明する。
-- `tag-index.json` はコミットしないローカル生成物である。初回は `npm install` 後の `postinstall` で生成される。
-- `tag-index.json` が存在しない、または古い可能性がある場合は `npm run tags:index` で生成してから読む。
-- push時は `npm run tags:export` で `tag-index.json` とタグスニペットを再生成する。
+- `tag-index.json` と `article-index.json` はコミットしないローカル生成物である。初回は `npm install` 後の `postinstall` で生成される。
+- `tag-index.json` または `article-index.json` が存在しない、または古い可能性がある場合は `npm run tags:export` で生成してから読む。
+- push時は `npm run tags:export` で `tag-index.json`、`article-index.json` とタグスニペットを再生成する。

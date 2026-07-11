@@ -25,7 +25,7 @@
 npm run tags:export
 ```
 
-索引再生成は `npm run tags:export` を使う。別のローカルスキルや古い手順に `npm run tags:index` とあっても、このリポジトリでは `AGENTS.md` の `npm run tags:export` を優先する。
+索引再生成は `npm run tags:export` を使う。`npm run tags:index` は `tag-index.json` しか生成しない (`article-index.json` とタグスニペットが更新されない) ため、単独では使わない。
 
 `article-context-router` が存在しない場合だけ、`article-index.json` で候補記事のタイトルとタグを確認し、`tag-index.json` で同タグ・関連タグの記事を最小限に絞る。索引ファイル全体を回答に貼らない。
 
