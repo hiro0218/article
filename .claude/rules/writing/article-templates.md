@@ -113,16 +113,3 @@ paths:
 
 - メインガイドライン: `CLAUDE.md`
 - コード例のパターン: `.claude/rules/writing/code-example-patterns.md`
-
-## 関連リソース
-
-### レビュー時の詳細基準
-
-記事レビュー時により詳細な構成基準を確認する場合：
-
-- `.claude/skills/article-review/references/article_structure.md`
-  - 見出しの使用傾向（2020-2026年実測値）
-  - 避けるべき見出しパターン
-  - コード例の配置パターン詳細
-
-このファイルは記事作成時のクイックリファレンス用であり、レビュー時の詳細な判断基準は上記ファイルを参照してください。
