@@ -1,0 +1,68 @@
+{
+  "companies": [
+    {
+      "id": "zozo",
+      "name": "株式会社ZOZO",
+      "url": "https://corp.zozo.com/"
+    }
+  ],
+  "works": [
+    {
+      "type": "slide",
+      "title": "ZOZOTOWNフロントエンドにおけるディレクトリの分割戦略",
+      "url": "https://speakerdeck.com/zozotech/zozotown-frontend-directory-design",
+      "companyId": "zozo"
+    },
+    {
+      "type": "slide",
+      "title": "セマンティックHTMLによる アクセシビリティ品質向上の基礎",
+      "url": "https://speakerdeck.com/zozotech/semantic-html-accessibility-basics",
+      "companyId": "zozo"
+    },
+    {
+      "type": "blog",
+      "title": "ITCSSを採用して共同開発しやすいCSS設計をZOZOTOWNに導入した話",
+      "url": "https://techblog.zozo.com/entry/itcss-to-zozotown",
+      "companyId": "zozo"
+    },
+    {
+      "type": "blog",
+      "title": "ZOZOTOWN Webフロントエンドリプレイスにおける CSS in JS の技術選定で Emotion を選定した話",
+      "url": "https://techblog.zozo.com/entry/zozotown-css-in-js",
+      "companyId": "zozo"
+    },
+    {
+      "type": "blog",
+      "title": "ZOZOTOWNのフロントエンド開発にCSS in JSを導入して2年後の状況",
+      "url": "https://techblog.zozo.com/entry/zozotown-css-in-js-followup",
+      "companyId": "zozo"
+    },
+    {
+      "type": "blog",
+      "title": "ZOZOTOWN フロントエンドにおけるディレクトリの分割戦略",
+      "url": "https://techblog.zozo.com/entry/zozotown-frontend-directory-design",
+      "companyId": "zozo"
+    },
+    {
+      "type": "event",
+      "title": "Webナイト宮崎 Vol.14 〜てげ HTML/CSS マークアップ学びたい〜",
+      "url": "https://tegehoge.connpass.com/event/220855/",
+      "date": "2021-09-03T19:00:00+09:00",
+      "companyId": null
+    },
+    {
+      "type": "event",
+      "title": "ZOZO Tech Meetup - Webフロントエンド",
+      "url": "https://zozotech-inc.connpass.com/event/297226/",
+      "date": "2023-11-06T19:00:00+09:00",
+      "companyId": "zozo"
+    },
+    {
+      "type": "event",
+      "title": "開発組織でアクセシビリティを進める技術 by SmartHR",
+      "url": "https://smarthr.connpass.com/event/373387/",
+      "date": "2025-11-19T19:30:00+09:00",
+      "companyId": "zozo"
+    }
+  ]
+}
