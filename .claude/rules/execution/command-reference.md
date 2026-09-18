@@ -8,14 +8,11 @@ paths:
 
 ## 正しいパターン
 
-```bash
-npx textlint _posts/202501011234.md          # チェック
-npx textlint --fix _posts/202501011234.md     # 自動修正
-npx prettier --write _posts/202501011234.md   # フォーマット
-npx markdown-link-check _posts/202501011234.md --config markdown-link-check.config.json  # リンク切れ
-```
+実行してよいのは CLAUDE.md『品質検証』の3コマンドと `npx textlint --fix {filepath}` を、1ファイル指定で実行する形だけである。
 
 ## 禁止パターン
+
+`npm run lint:text` / `format` / `link:check` は `package.json` で `_posts` 全体を対象にしており、スクリプト名からは判別できない。
 
 ```bash
 npx textlint _posts/              # ディレクトリ指定
@@ -28,11 +25,4 @@ npm run link:check                 # 全記事リンク検証
 npx markdown-link-check _posts/*.md --config markdown-link-check.config.json  # ワイルドカード
 ```
 
-違反時は `git restore` で戻し、1ファイルずつやり直す。
-
-## 人間確認必須
-
-- フロントマターの変更
-- ファイル名の変更
-- `.textlintrc` の編集
-- npm パッケージの追加・削除
+複数ファイルが書き換わった場合は `git diff --stat` で影響範囲を確認し、対象外ファイルの変更は Edit で個別に戻す。`git restore` / `git checkout -- <path>` は未コミットの正当な差分ごと巻き戻すため使わない。
