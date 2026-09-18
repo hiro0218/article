@@ -1,14 +1,10 @@
 # ローカル記事リポジトリ
 
-記事リポジトリで記事を書く・編集するときに読む。記事リポジトリのルートは、ユーザーが指定した作業ディレクトリまたは現在の作業ディレクトリとして扱う。
+記事リポジトリで記事を書く・編集するときに読む。
 
 ## 既存記事の傾向
 
-既存記事の傾向は、固定値ではなく `article-index.json`、`tag-index.json`、最近の記事から確認する。
-
-- タイトル、見出し、タグ、文体は近い既存記事に合わせる。
-- 技術記事、調査記事、設計論、雑記、レビュー、感想、短いメモなど、既存記事の型を観測して選ぶ。
-- 外部情報を根拠にする記事では、記事リポジトリの既存慣習に合わせて参考リンクを置く。
+タイトル、見出し、タグ、文体は近い既存記事に合わせる。
 
 ## 文脈収集
 
@@ -27,37 +23,17 @@ npm run tags:export
 
 索引再生成は `npm run tags:export` を使う。`npm run tags:index` は `tag-index.json` しか生成しない (`article-index.json` とタグスニペットが更新されない) ため、単独では使わない。
 
-`article-context-router` が存在しない場合だけ、`article-index.json` で候補記事のタイトルとタグを確認し、`tag-index.json` で同タグ・関連タグの記事を最小限に絞る。索引ファイル全体を回答に貼らない。
-
 ## 文体
 
-リポジトリの文体に合わせる。
-
-- `だ・である` 調で書く。
-- 短く断定する。
-- 主観より観測結果・検証結果を優先する。
-- 抽象語より具体的な名詞を使う。
-- 汎用的な AI 風の導入や大げさな評価を避ける。細かい検出と rewrite は `avoid-ai-writing` に委譲する。
+文体は `.claude/rules/writing/writing-voice.md` に従う。AI 風表現の検出と rewrite は `avoid-ai-writing` に委譲する。
 
 ## 執筆ルール
 
 記事リポジトリの `AGENTS.md`、`CLAUDE.md`、writing rules、`article-foundation-editor` がある場合は、それらの制約を優先する。最低限、以下は守る。
 
-- 既存記事のフロントマターは編集しない。
-- 新規記事はリポジトリ指定の生成コマンドで作る。指定がある場合はファイル名を手で作らない。
-- `textlint-disable` / `textlint-enable` コメントを削除・移動しない。
-- AI 編集禁止範囲を編集しない。
-- コードフェンスには言語を指定する。
+- 絶対制約は CLAUDE.md に従う。
 - 非技術記事では、技術記事向けのコード例数、検証環境、再現性の要件を機械的に適用しない。
 
 ## 検証
 
-検証は対象ファイルだけに実行する。
-
-```bash
-npx textlint path/to/article.md
-npx prettier --write path/to/article.md
-npx markdown-link-check path/to/article.md --config markdown-link-check.config.json
-```
-
-記事検証で `npm run link:check` は実行しない。ディレクトリやワイルドカードを対象にした textlint も実行しない。
+検証は CLAUDE.md『品質検証』の3コマンドを対象ファイルだけに実行する。
