@@ -8,7 +8,7 @@ paths:
 
 ## 正しいパターン
 
-実行してよいのは CLAUDE.md『品質検証』の3コマンドと `npx textlint --fix {filepath}` を、1ファイル指定で実行する形だけである。
+`textlint`・`prettier`・`markdown-link-check` は、CLAUDE.md『品質検証』の3コマンドと `npx textlint --fix {filepath}` を1ファイル指定で実行する形だけにする。
 
 ## 禁止パターン
 

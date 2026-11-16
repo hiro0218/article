@@ -12,7 +12,7 @@ description: 記事リポジトリ向けの記事を作成・更新する。話�
 - 関連記事調査・タグ候補・記事群比較: `article-context-router`
 - 公開前の基礎編集・保護範囲確認: `article-foundation-editor`
 - 技術記事の再現性評価: `tech-article-reproducibility`
-- AI らしい文体の検出・除去: `avoid-ai-writing`
+- AI らしい文体の検出・除去: 技術記事は `japanese-tech-writing`、雑記・感想などは `stop-ai-slop-jp`
 
 ## 基本方針
 
@@ -57,7 +57,7 @@ description: 記事リポジトリ向けの記事を作成・更新する。話�
 
 1. [references/article-types.md](references/article-types.md) の該当テンプレートを使う。
 2. 記事リポジトリにテンプレートや writing rules があれば優先する。
-3. 見出しは `##` から始める。必要なら簡潔な主張型見出しを使う。
+3. 見出しは `##` から始める。
 4. タイトルは既存記事の型に寄せる。
 5. 各章の役割を明確にする。
 6. 長い記事や協調執筆が必要な場合は、アウトラインを提示して承認を待つ。全文作成を直接求められた場合は、前提を明示して進める。
@@ -74,7 +74,7 @@ description: 記事リポジトリ向けの記事を作成・更新する。話�
 
 ### 4. 推敲
 
-1. AI らしい汎用表現、大げさな評価、不要な導入を削る。詳細な検出・rewrite が必要な場合は `avoid-ai-writing` を使う。
+1. AI らしい汎用表現、大げさな評価、不要な導入を削る。詳細な検出・rewrite が必要な場合は、技術記事では `japanese-tech-writing`、雑記・感想などでは `stop-ai-slop-jp` を使う。
 2. 各章が、主張を進める・根拠を示す・条件を絞る・読者の行動を示す、のいずれかを満たすようにする。
 3. 公開前の基礎編集が必要な場合は、`article-foundation-editor` が存在するならそちらを使う。
 4. 技術記事で再現性が重要な場合は、`tech-article-reproducibility` が存在するならそちらを使う。

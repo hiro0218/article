@@ -70,3 +70,8 @@ npx markdown-link-check {filepath} --config markdown-link-check.config.json
 ```
 
 エラーゼロで完了とする。
+
+## リンク検証の既知問題
+
+- `npx markdown-link-check` は `/images/` 画像を含む記事で `ERR_INVALID_FILE_URL_HOST` でクラッシュする(Markdown-link-check.config.jsonのreplacement `"file://../images/"` の `..` がURLホストと解釈される)。回避: 画像は `ls images/<file>` で実在確認し、外部リンクは `^/images/` をignorePatternsに足した一時設定（scratchpad配置）で検証する
+- CodePenの `/embed/` URLは非ブラウザ客を一律403にする。リンク生存判定はペン本体 `https://codepen.io/<user>/pen/<id>` をcurlして行う（200ならembedも生きている）

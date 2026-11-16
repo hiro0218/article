@@ -25,7 +25,7 @@ npm run tags:export
 
 ## 文体
 
-文体は `.claude/rules/writing/writing-voice.md` に従う。AI 風表現の検出と rewrite は `avoid-ai-writing` に委譲する。
+文体は `.claude/rules/writing/writing-voice.md` に従う。AI 風表現の検出と rewrite の委譲先は、技術記事が `japanese-tech-writing`、雑記・感想などが `stop-ai-slop-jp` である。
 
 ## 執筆ルール
 
